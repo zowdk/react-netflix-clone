@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Item, Inner } from "./styles/jumbotron";
 
 export default function Jumbotron({
   children,
