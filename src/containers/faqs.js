@@ -1,22 +1,21 @@
 import React from "react";
-import { Accordian, OptForm } from "../components";
-import OptForm from "../components/opt-form";
+import { Accordion, OptForm } from "../components";
 import faqsData from "../fixtures/faqs.json";
 
 export function FaqsContainer() {
-  <Accordian>
+  <Accordion>
     <Accordion.Title>Frequently Asked Questions</Accordion.Title>
-    <Accordian.Frame>
+    <Accordion.Frame>
       {faqsData.map((item) => (
-        <Accordian.Item key={item.id}>
-          <Accordian.Header>{item.header}</Accordian.Header>
-          <Accordian.Body>{item.body}</Accordian.Body>
-        </Accordian.Item>
+        <Accordion.Item key={item.id}>
+          <Accordion.Header>{item.header}</Accordion.Header>
+          <Accordion.Body>{item.body}</Accordion.Body>
+        </Accordion.Item>
       ))}
-    </Accordian.Frame>
+    </Accordion.Frame>
 
     <OptForm>
       <OptForm.Input placeholder="Email Address " />
     </OptForm>
-  </Accordian>;
+  </Accordion>;
 }
