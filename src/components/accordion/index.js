@@ -25,17 +25,18 @@ Accordion.Frame = function AccordionFrame({ children, ...restProps }) {
 Accordion.Item = function AccordionItem({ children, ...restProps }) {
   const [toggleShow, setToggleShow] = useState(false);
 
-  return;
-  <ToggleContent.Provider value={{ toggleShow, setToggleShow }}>
-    <Item {...restProps}>{children}</Item>;
-  </ToggleContent.Provider>;
+  return (
+    <ToggleContent.Provider value={{ toggleShow, setToggleShow }}>
+      <Item {...restProps}>{children}</Item>;
+    </ToggleContent.Provider>
+  );
 };
 
-Accordion.Title = function AccordionTitle({ chidlren, ...restProps }) {
+Accordion.Title = function AccordionTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>;
 };
 
-Accordion.Header = function AccordionHeader({ chidlren, ...restProps }) {
+Accordion.Header = function AccordionHeader({ children, ...restProps }) {
   const { toggleShow, setToggleShow } = useContext(ToggleContent);
 
   return (
@@ -50,7 +51,7 @@ Accordion.Header = function AccordionHeader({ chidlren, ...restProps }) {
   );
 };
 
-Accordion.Body = function AccordionBody({ chidlren, ...restProps }) {
+Accordion.Body = function AccordionBody({ children, ...restProps }) {
   const { toggleShow } = useContext(ToggleContent);
 
   return toggleShow ? <Body {...restProps}>{children}</Body> : null;
