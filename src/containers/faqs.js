@@ -15,7 +15,7 @@ export function FaqsContainer() {
     </Accordion.Frame>
 
     <OptForm>
-      <OptForm.Input placeholder="Email Address " />
+      <OptForm.Input placeholder="Email Address" />
     </OptForm>
   </Accordion>;
 }
