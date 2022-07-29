@@ -13,6 +13,8 @@
     "@babel/preset-env": "^7.18.9",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^8.2.5",
+    "eslint": "^8.20.0",
+    "eslint-config-react-app": "^7.0.1",
     "npm-run-all": "^4.1.5",
     "open-cli": "^7.0.1",
     "serve": "^14.0.1",
@@ -24,6 +26,7 @@
     "watch": "webpack -w",
     "serve": "serve",
     "open": "open-cli http://localhost:3000",
-    "dev": "run-p watch serve open"
+    "dev": "run-p watch serve open",
+    "lint": "eslint src"
   }
 }
