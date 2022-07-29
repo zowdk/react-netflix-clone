@@ -1,26 +1,34 @@
 [
   {
     "id": 1,
-    "title": "There's even more to watch.",
-    "subTitle": "Netflix has an extensive library of feature films, documentaries, TV programs, anime, award-winning Netflix originals and more. Watch as you want, any time you want.",
+    "title": "Enjoy on your TV.",
+    "subTitle": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
     "image": "/images/misc/home-tv.jpg",
     "alt": "Tiger King on Netflix",
     "direction": "row"
   },
   {
     "id": 2,
-    "title": "Take Netflix with you.",
-    "subTitle": "It's easy to watch Netflix from anywhere. Connect to Netflix using your favorite devices.",
+    "title": "Download your programmes to watch offline.",
+    "subTitle": "Save your favourites easily and always have something to watch.",
     "image": "/images/misc/home-mobile.jpg",
     "alt": "Tiger King on Netflix",
     "direction": "row-reverse"
   },
   {
     "id": 3,
-    "title": "Watch with what you have.",
-    "subTitle": "Netflix is optimized for today's most popular browsers so you can watch on your PC or laptop.",
+    "title": "Watch everywhere.",
+    "subTitle": "Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.",
     "image": "/images/misc/home-imac.jpg",
     "alt": "Money Heist on Netflix",
     "direction": "row"
+  },
+  {
+    "id": 4,
+    "title": "Create profiles for children.",
+    "subTitle": "Send children on adventures with their favourite characters in a space made just for them – free with your membership.",
+    "image": "/images/misc/home-kids.jpg",
+    "alt": "Chidren's Content on Netflix",
+    "direction": "row-reverse"
   }
 ]
