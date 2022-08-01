@@ -10,8 +10,8 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   color: white;
-  max-width: 640px;
-  font-size: 50px;
+  max-width: 650px;
+  font-size: 55px;
   font-weight: 500;
   margin: auto;
 
