@@ -12,7 +12,7 @@ export default function Home() {
         <OptForm>
           <OptForm.Input placeholder="Email Address" />
           <OptForm.Button>Get Started</OptForm.Button>
-          {/* //todo: insert break between input and text */}
+          <OptForm.Break />
           <OptForm.Text>
             Ready to watch? Enter your email to create or restart your
             membership.
