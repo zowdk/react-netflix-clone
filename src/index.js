@@ -18,8 +18,10 @@ const firebase = window.firebase.initializeApp(config);
 
 ReactDOM.render(
   <>
-    <GlobalStyles />
-    <App />
+    <FirebaseContext.Provider value={{ firebase: window.firebase }}>
+      <GlobalStyles />
+      <App />
+    </FirebaseContext.Provider>
   </>,
   document.getElementById("root")
 );
