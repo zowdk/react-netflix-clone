@@ -14,6 +14,8 @@ const config = {
   appId: "",
 };
 
+const firebase = window.firebase.initializeApp(config);
+
 ReactDOM.render(
   <>
     <GlobalStyles />
