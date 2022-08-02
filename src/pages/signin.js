@@ -12,9 +12,6 @@ export default function Signin() {
 
   const handleSignin = (event) => {
     event.preventDefault();
-
-    //call in here to firebase to authenticate the user
-    //if there's an error, populate the error state
   };
   return (
     <>
