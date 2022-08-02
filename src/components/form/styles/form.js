@@ -5,7 +5,7 @@ export const Container = styled.section``;
 
 export const Error = styled.div``;
 
-export const Form = styled.form``;
+export const Base = styled.form``;
 
 export const Title = styled.h1``;
 
@@ -18,5 +18,3 @@ export const Link = styled(ReachRouterLink)``;
 export const Input = styled.input``;
 
 export const Submit = styled.button``;
-
-// Container, Error, Base, Title, Text, TextSmall, Link, Input, Submit
