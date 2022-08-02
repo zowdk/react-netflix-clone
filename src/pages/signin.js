@@ -34,7 +34,7 @@ export default function Signin() {
               value={password}
               autoComplete="off"
               placeholder="Password"
-              onChange={({ target }) => setEmailAddress(target.value)}
+              onChange={({ target }) => setPassword(target.value)}
             ></Form.Input>
             <Form.Submit disabled={isInvalid} type="submit">
               Sign In
