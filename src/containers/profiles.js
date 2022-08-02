@@ -1,9 +1,8 @@
 import React from "react";
 import { Header, Profiles } from "../components";
-import { List, Title, Picture, Name } from "../containers/profiles";
 import * as ROUTES from "../constants";
 
-export function SelectProfileContainer() {
+export function SelectProfileContainer({ user, setProfile }) {
   return (
     <>
       <Header bg={false}>

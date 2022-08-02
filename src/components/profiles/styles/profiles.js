@@ -10,6 +10,4 @@ export const Name = styled.p``;
 
 export const Picture = styled.img``;
 
-export const Title = styled.h1``;
-
 export const Item = styled.li``;
