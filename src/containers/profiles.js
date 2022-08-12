@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Profiles } from "../components";
-import * as ROUTES from "../constants";
+import * as ROUTES from "../constants/routes";
 
 export function SelectProfileContainer({ user, setProfile }) {
   return (
@@ -10,7 +10,7 @@ export function SelectProfileContainer({ user, setProfile }) {
           <Header.Logo
             to={ROUTES.HOME}
             src="/images/misc/logo.svg"
-            alt="Netflix logo"
+            alt="Netflix"
           />
         </Header.Frame>
       </Header>
