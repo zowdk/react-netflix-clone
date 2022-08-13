@@ -7,6 +7,7 @@ import { FooterContainer } from "./footer";
 
 export function BrowseContainer() {
   const [profile, setProfile] = useState({});
+
   const user = {
     displayName: "Karl",
     photoURL: "1",
