@@ -52,6 +52,7 @@ export function BrowseContainer() {
             around him.
           </Header.Text>
         </Header.Feature>
+        <Header.PlayButton>Play</Header.PlayButton>
       </Header>
       <FooterContainer />
     </>
