@@ -27,18 +27,18 @@ export function BrowseContainer() {
               src="/images/misc/logo.svg"
               alt="Netflix"
             />
-            <Header.TextLink
+            <Header.Link
               active={category === "series" ? "true" : "false"}
               onClick={() => setCategory("series")}
             >
               Series
-            </Header.TextLink>
-            <Header.TextLink
+            </Header.Link>
+            <Header.Link
               active={category === "films" ? "true" : "false"}
               onClick={() => setCategory("films")}
             >
               Films
-            </Header.TextLink>
+            </Header.Link>
           </Header.Group>
         </Header.Frame>
       </Header>
