@@ -1,9 +1,10 @@
-import React, { useContext, useState } from "react";
-import { Header } from "../components";
+import React, { useContext, useEffect, useState } from "react";
+import { Loading, Header } from "../components";
 import * as ROUTES from "../constants/routes";
 import { FirebaseContext } from "../context/firebase";
 import { SelectProfileContainer } from "./profiles";
 import { FooterContainer } from "./footer";
+import Loading from "../components/loading";
 
 export function BrowseContainer() {
   const [category, setCategory] = useState("series");
@@ -18,8 +19,14 @@ export function BrowseContainer() {
     photoURL: "1",
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, [user]);
   return profile.displayName ? (
     <>
+      {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
       <Header src="joker1" dontShowOnSmallViewport>
         <Header.Frame>
           <Header.Group>
