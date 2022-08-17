@@ -1,13 +1,13 @@
 import React from "react";
+import { LockBody, ReleaseBody, Spinner } from "./styles/loading";
 
-export default function Loading({ }) {
-    return (
-
-    )
+export default function Loading({}) {
+  return (
+    <Spinner {...restProps}>
+      <LockBody />
+    </Spinner>
+  );
 }
-
-//spinner styled component
-//lockbody styled component
-    //will be a child of the spinner
-
-//a new CC component that will be the release body
+Loading.ReleaseBody = function LoadingReleaseBody() {
+  return <ReleaseBody />;
+};
