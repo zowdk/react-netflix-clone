@@ -24,7 +24,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack -w",
-    "serve": "serve",
+    "serve": "serve -s",
     "open": "open-cli http://localhost:3000",
     "dev": "run-p watch serve open",
     "lint": "eslint src"
