@@ -4,6 +4,8 @@ import { Route } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
 import { Home, Browse, Signin, Signup } from "./pages";
 
+import { seedDatabase } from "./seed";
+
 export function App() {
   return (
     <Router>

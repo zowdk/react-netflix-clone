@@ -4,7 +4,6 @@ import * as ROUTES from "../constants/routes";
 import { FirebaseContext } from "../context/firebase";
 import { SelectProfileContainer } from "./profiles";
 import { FooterContainer } from "./footer";
-import Loading from "../components/loading";
 
 export function BrowseContainer() {
   const [category, setCategory] = useState("series");
