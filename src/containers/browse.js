@@ -4,8 +4,8 @@ import * as ROUTES from "../constants/routes";
 import { FirebaseContext } from "../context/firebase";
 import { SelectProfileContainer } from "./profiles";
 import { FooterContainer } from "./footer";
-import { Item } from "../components/accordion/styles/accordion";
-import { TextSmall } from "../components/form/styles/form";
+// import { Item } from "../components/accordion/styles/accordion";
+// import { TextSmall } from "../components/form/styles/form";
 
 export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState("series");
