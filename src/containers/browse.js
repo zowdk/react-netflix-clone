@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useMemo, useState } from "react";
 import { Card, Loading, Header } from "../components";
 import * as ROUTES from "../constants/routes";
 import { FirebaseContext } from "../context/firebase";
@@ -16,10 +16,12 @@ export function BrowseContainer({ slides }) {
 
   const { firebase } = useContext(FirebaseContext);
 
-  const user = {
-    displayName: "Karl",
-    photoURL: "1",
-  };
+  const user = useMemo(() => {
+    return {
+      displayName: "Karl",
+      photoURL: "1",
+    };
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -42,18 +44,18 @@ export function BrowseContainer({ slides }) {
               src="/images/misc/logo.svg"
               alt="Netflix"
             />
-            <Header.Link
+            <Header.TextLink
               active={category === "series" ? "true" : "false"}
               onClick={() => setCategory("series")}
             >
               Series
-            </Header.Link>
-            <Header.Link
+            </Header.TextLink>
+            <Header.TextLink
               active={category === "films" ? "true" : "false"}
               onClick={() => setCategory("films")}
             >
               Films
-            </Header.Link>
+            </Header.TextLink>
           </Header.Group>
 
           <Header.Group>
