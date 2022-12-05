@@ -41,7 +41,7 @@ export function BrowseContainer({ slides }) {
           <Header.Group>
             <Header.Logo
               to={ROUTES.HOME}
-              src="/images/misc/logo.svg"
+              src="./images/misc/logo.svg"
               alt="Netflix"
             />
             <Header.TextLink
@@ -102,7 +102,7 @@ export function BrowseContainer({ slides }) {
               {slideItem.data.map((item) => (
                 <Card.Item key={item.docId} item={item}>
                   <Card.Image
-                    src={`/images/${category}/${item.genre}/${item.slug}/small.jpg`}
+                    src={`./images/${category}/${item.genre}/${item.slug}/small.jpg`}
                   />
                   <Card.Meta>
                     <Card.SubTitle>{item.title}</Card.SubTitle>
