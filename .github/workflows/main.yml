@@ -23,7 +23,9 @@ jobs:
         run: npm run build
 
       - name: Git Ignore
-        run: echo '!dist' >> .gitignore
+        run: |
+          echo '' >> .gitignore
+          echo '!dist' >> .gitignore
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
