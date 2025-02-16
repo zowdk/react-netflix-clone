@@ -11,8 +11,8 @@ export default function Signin() {
   const { firebase } = useContext(FirebaseContext);
 
   const [error, setError] = useState("");
-  const [emailAddress, setEmailAddress] = useState("");
-  const [password, setPassword] = useState("");
+  const [emailAddress, setEmailAddress] = useState("demo@test-email.com");
+  const [password, setPassword] = useState("demo-password");
 
   const isInvalid = (password === "") | (emailAddress === "");
 

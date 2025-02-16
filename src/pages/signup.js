@@ -9,9 +9,9 @@ import { FooterContainer } from "../containers/footer";
 export default function Signup() {
   const history = useHistory();
   const { firebase } = useContext(FirebaseContext);
-  const [firstName, setFirstName] = useState("");
-  const [emailAddress, setEmailAddress] = useState("");
-  const [password, setPassword] = useState("");
+  const [firstName, setFirstName] = useState("Test");
+  const [emailAddress, setEmailAddress] = useState("demo@test-email.com");
+  const [password, setPassword] = useState("demo-password");
   const [error, setError] = useState("");
 
   const isInvalid =
